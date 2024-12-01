@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charSet="utf-8" />
+    <title>VaultCord - Bot for Discord</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+    <meta content="The best Discord backups bot | VaultCord" name="description" />
+    <meta content="VaultCord" name="author" />
+    <meta name="keywords" content="restorecord, discord backups, xenon bot discord, savecord, guildmergers, restorio, restore discord members, discord auth bot, discord oauth2 bot, oauth member bot" />
+    <meta property="og:title" content="The best Discord backups bot | VaultCord" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vaultcord.com/" />
+    <meta property="og:description" content="Backup server, members, channels, messages &amp; more. Custom verify page, block alt accounts, VPNs &amp; more. Try VaultCord now for FREE!" />
+    <meta property="og:image" content="https://cdn.vaultcord.com/logo.png" />
+    <meta property="og:site_name" content="VaultCord" />
+    <meta itemprop="name" content="VaultCord" />
+    <meta itemprop="description" content="Backup server, members, channels, messages &amp; more. Custom verify page, block alt accounts, VPNs &amp; more. Try VaultCord now for FREE!" />
+    <meta itemprop="image" content="https://cdn.vaultcord.com/logo.png" />
+    <meta name="twitter:card" content="product" />
+    <meta name="twitter:site" content="@VaultCord" />
+    <meta name="twitter:title" content="The best Discord backups bot | VaultCord" />
+    <meta name="twitter:description" content="Backup server, members, channels, messages &amp; more. Custom verify page, block alt accounts, VPNs &amp; more. Try VaultCord now for FREE!" />
+    <meta name="twitter:creator" content="@VaultCord" />
+    <meta name="twitter:image" content="https://cdn.vaultcord.com/logo.png" />
+    <meta name="apple-itunes-app" content="app-id=6503178615" />
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://vaultcord.com/",
+            "name": "VaultCord",
+            "description": "Backup server, members, channels, messages & more. Custom verify page, block alt accounts, VPNs & more. Try VaultCord now for FREE!",
+            "publisher": {
+                "@type": "Organization",
+                "name": "VaultCord",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://cdn.vaultcord.com/logo.png"
+                }
+            }
+        }
+    </script>
+    <link rel="alternate" href="https://vaultcord.com/" hrefLang="en" />
+    <link rel="alternate" href="https://vaultcord.com/" hrefLang="x-default" />
+    <link rel="alternate" href="https://vaultcord.com/ar" hrefLang="ar" />
+    <link rel="alternate" href="https://vaultcord.com/bg" hrefLang="bg" />
+    <link rel="alternate" href="https://vaultcord.com/cs" hrefLang="cs" />
+    <link rel="alternate" href="https://vaultcord.com/tr" hrefLang="tr" />
+    <link rel="alternate" href="https://vaultcord.com/zh" hrefLang="zh" />
+    <link rel="alternate" href="https://vaultcord.com/zh-TW" hrefLang="zh-TW" />
+    <link rel="alternate" href="https://vaultcord.com/ru" hrefLang="ru" />
+    <link rel="alternate" href="https://vaultcord.com/uk" hrefLang="uk" />
+    <link rel="alternate" href="https://vaultcord.com/fr" hrefLang="fr" />
+    <link rel="alternate" href="https://vaultcord.com/de" hrefLang="de" />
+    <link rel="alternate" href="https://vaultcord.com/el" hrefLang="el" />
+    <link rel="alternate" href="https://vaultcord.com/hi" hrefLang="hi" />
+    <link rel="alternate" href="https://vaultcord.com/pl" hrefLang="pl" />
+    <link rel="alternate" href="https://vaultcord.com/pt" hrefLang="pt" />
+    <link rel="alternate" href="https://vaultcord.com/nl" hrefLang="nl" />
+    <link rel="alternate" href="https://vaultcord.com/it" hrefLang="it" />
+    <link rel="alternate" href="https://vaultcord.com/es" hrefLang="es" />
+    <link rel="alternate" href="https://vaultcord.com/ro" hrefLang="ro" />
+    <link rel="alternate" href="https://vaultcord.com/sk" hrefLang="sk" />
+    <link rel="alternate" href="https://vaultcord.com/ja" hrefLang="ja" />
+    <link rel="alternate" href="https://vaultcord.com/hu" hrefLang="hu" />
+    <link rel="alternate" href="https://vaultcord.com/ko" hrefLang="ko" />
+    <link rel="alternate" href="https://vaultcord.com/lt" hrefLang="lt" />
+    <link rel="alternate" href="https://vaultcord.com/no" hrefLang="no" />
+    <link rel="alternate" href="https://vaultcord.com/pt-BR" hrefLang="pt-BR" />
+    <link rel="alternate" href="https://vaultcord.com/sr" hrefLang="sr" />
+    <link rel="alternate" href="https://vaultcord.com/sv" hrefLang="sv" />
+    <link rel="alternate" href="https://vaultcord.com/th" hrefLang="th" />
+    <link rel="alternate" href="https://vaultcord.com/vi" hrefLang="vi" />
+    <link rel="alternate" href="https://vaultcord.com/ku-IQ" hrefLang="ku-IQ" />
+    <link rel="alternate" href="https://vaultcord.com/da" hrefLang="da" />
+    <link rel="alternate" href="https://vaultcord.com/fa" hrefLang="fa" />
+    <link rel="alternate" href="https://vaultcord.com/fi" hrefLang="fi" />
+    <link rel="alternate" href="https://vaultcord.com/hr" hrefLang="hr" />
+    <link rel="alternate" href="https://vaultcord.com/he" hrefLang="he" />
+    <link rel="alternate" href="https://vaultcord.com/tl" hrefLang="tl" />
+    <link rel="preload" href="/static/landing/landing-bg-min.png" as="image" fetchPriority="high" />
+    <meta name="next-head-count" content="62" />
+    <link rel="preload" href="/_next/static/css/7ce1ba0518915c59.css" as="style" crossorigin="" />
+    <link rel="stylesheet" href="/_next/static/css/7ce1ba0518915c59.css" crossorigin="" data-n-g="" /><noscript data-n-css=""></noscript>
+    <script defer="" crossorigin="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+    <script src="/_next/static/chunks/webpack-f971ea1d373751aa.js" defer="" crossorigin=""></script>
+    <script src="/_next/static/chunks/framework-3e5d1a7330ce407f.js" defer="" crossorigin=""></script>
+    <script src="/_next/static/chunks/main-b2aa729a4a13a360.js" defer="" crossorigin=""></script>
+    <script src="/_next/static/chunks/pages/_app-8637540fb9fea599.js" defer="" crossorigin=""></script>
+    <script src="/_next/static/chunks/pages/index-4c9c6e43c182b474.js" defer="" crossorigin=""></script>
+    <script src="/_next/static/N6wz5kZJXxs3fuBWaPPD6/_buildManifest.js" defer="" crossorigin=""></script>
+    <script src="/_next/static/N6wz5kZJXxs3fuBWaPPD6/_ssgManifest.js" defer="" crossorigin=""></script>
+    <style id="__jsx-de29b1d7c8a6e37e">
+        body,
+        html,
+        #__next,
+        .wrapper {
+            height: auto;
+            background: #12131a
+        }
+    </style>
+</head>
+
+<body>
+    <div id="__next"><a href="https://vaultcord.com/discord" class="discord-chat-bubble" target="_blank"><img src="https://cdn.vaultcord.com/discord-icon-2048x1570-y371emu6.png" alt="Discord"/></a>
+        <div id="main" class=" ">
+            <div class=" ">
+                <div class="jsx-de29b1d7c8a6e37e landing-page landing-text tw-h-fit tw-bg-gray-900">
+                    <div class="tw-w-ful tw-sticky tw-top-0 tw-backdrop-blur-md  tw-z-50 tw-border-0 tw-border-b tw-border-solid tw-border-gray-850 tw-transition-all tw-duration-300 tw-border-none tw-bg-gray-900/0">
+                        <div class="tw-m-auto tw-max-w-[1240px] tw-px-3 lg:tw-px-8">
+                            <nav class="tw-flex tw-flex-row tw-items-center tw-justify-between tw-py-5 lg:tw-py-3" id="navbar"><a class="tw-block tw-h-fit sm:tw-h-[28px] custom-link" aria-label="Home page" href="/">VaultCord</a>
+                                <nav aria-label="Main" data-orientation="horizontal" dir="ltr" class="tw-relative tw-flex tw-w-screen tw-max-w-[65%] tw-items-center tw-justify-center sm:tw-hidden">
+                                    <div style="position:relative">
+                                        <ul data-orientation="horizontal" class="tw-center tw-m-0 tw-flex tw-list-none tw-items-center tw-rounded-[6px] tw-bg-none tw-p-1" dir="ltr">
+                                            <li><button id="radix-:Rhlm:-trigger-radix-:Rbhlm:" data-state="closed" aria-expanded="false" aria-controls="radix-:Rhlm:-content-radix-:Rbhlm:" class="nav_menu_trigger tw-m-0 tw-flex tw-cursor-pointer tw-select-none tw-items-center tw-gap-2 tw-rounded-md tw-border-none tw-bg-transparent tw-bg-none tw-px-4 tw-py-2 tw-font-bold tw-text-gray-400 tw-outline-none tw-transition-all tw-duration-200  tw-ease-in  hover:tw-bg-gray-850 hover:tw-text-gray-100"
+                                                    data-radix-collection-item="">Features<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5L6.92269 8.91158L10.8454 5" stroke="#828699" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></li>
+                                            <li><button id="radix-:Rhlm:-trigger-radix-:Rjhlm:" data-state="closed" aria-expanded="false" aria-controls="radix-:Rhlm:-content-radix-:Rjhlm:" class="nav_menu_trigger tw-m-0 tw-flex tw-cursor-pointer tw-select-none tw-items-center tw-gap-2 tw-rounded-md tw-border-none tw-bg-transparent tw-bg-none tw-px-4 tw-py-2 tw-font-bold tw-text-gray-400 tw-outline-none tw-transition-all  tw-duration-200  hover:tw-bg-gray-850 hover:tw-text-gray-100"
+                                                    data-radix-collection-item="">Resources<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5L6.92269 8.91158L10.8454 5" stroke="#828699" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></li>
+                                            <li>
+                                                <a class="tw-flex tw-cursor-pointer tw-items-center tw-gap-2 tw-rounded-md tw-px-4 tw-py-2 tw-transition-all tw-duration-300 hover:tw-bg-[#EFB442]/10" href="/pricing">
+                                                    <p class="tw-m-0 tw-select-none tw-font-bold tw-text-[#EFB442] tw-transition-all tw-duration-200 ">Premium</p><img alt="premium" loading="lazy" width="21" height="20" decoding="async" data-nimg="1" class="tw-transition-all tw-duration-150" style="color:transparent" src="/static/landing/premium.svg"
+                                                    /></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tw-absolute tw-left-0 tw-top-full tw-w-full tw-items-center tw-perspective-[2000px]"></div>
+                                </nav>
+                                <div class="tw-flex tw-items-center">
+                                    <div class="tw-flex tw-items-center tw-gap-4"></div><svg class="tw--ml-1 tw-mr-3 tw-h-5 tw-w-5 tw-animate-spin tw-text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="tw-opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"></circle><path class="tw-opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg></div>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="jsx-de29b1d7c8a6e37e tw-max-w-[1240px] tw-m-auto tw-px-3 lg:tw-px-8">
+                        <section class="tw-flex tw-h-[72vh] tw-items-center tw-justify-center lg:tw-h-[85vh]">
+                            <div class="tw-flex tw-max-w-[440px] tw-flex-col tw-items-center tw-gap-12">
+                                <div class="tw-flex tw-flex-col tw-items-center">
+                                    <a href="/pricing">
+                                        <div data-aos="fade-up" class="landing-tag-text border tw-w-fit tw-rounded-full tw-border-solid tw-border-[#5F5DEF33] tw-bg-[#5753EC0A] tw-px-4 tw-py-2 tw-font-semibold lg:tw-text-center">New: Our Memberships Subscription</div>
+                                    </a>
+                                    <div>
+                                        <h1 data-aos-delay="100" data-aos="fade-up" class="landing-headline tw-text-center rtl:tw-leading-normal sm:tw-text-3xl">The best Discord backups bot</h1>
+                                        <p data-aos-delay="200" data-aos="fade-up" class="landing-para tw-text-center tw-text-gray-300">
+                                            <!-- -->Backup server, members, channels, messages &amp; more. Custom verify page, block alt accounts, VPNs &amp; more.</p>
+                                    </div>
+                                </div>
+                                <div data-aos-delay="400" data-aos="fade-up" class="flex tw-flex-row tw-items-center tw-justify-center tw-gap-4 lg:tw-w-full sm:tw-flex-col sm:tw-gap-2"><button class="button tw-bg-[#605ceb] tw-border-solid tw-border-[#6965F5] hover:tw-bg-[#807eea] tw-transition-all tw-duration-150 tw-rounded-md tw-text-base tw-py-3 tw-px-6 sm:tw-py-4 tw-text-sm lg:tw-w-full">Get started for FREE</button>
+                                    <svg
+                                        class="tw--ml-1 tw-mr-3 tw-h-5 tw-w-5 tw-animate-spin tw-text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                        <circle class="tw-opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"></circle>
+                                        <path class="tw-opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                        </svg>
+                                </div>
+                                <a href="https://trustpilot.com/review/vaultcord.com" target="_blank">
+                                    <div class="flex items-center border border-gray-400 border-dashed rounded-lg p-4"><img src="https://cdn.prod.website-files.com/668fb992781d015f5555961f/66a881bd30ea7adf54ea029f_Stars%20(1).svg" alt="TrustPilot Stars" class="mr-4" />
+                                        <p class="text-gray-400 text-lg font-medium">Verified by TrustPilot with<br/>50+ reviews!</p>
+                                    </div>
+                                </a>
+                                <div class="flex items-center"><a href="https://keyauth.cc" target="_blank"><img src="https://cdn.keyauth.cc/front/assets/img/favicon.png" class="mr-4" width="32" height="32"/></a><span>Owner of Vault created <a href="https://keyauth.cc" target="_blank" class="inline text-blue-200 underline decoration-dashed underline-offset-4 hover:decoration-solid">KeyAuth</a>, a<br/> trusted service with 135K+ customers!</span></div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="jsx-de29b1d7c8a6e37e tw-max-w-[1240px] tw-m-auto tw-px-3 lg:tw-px-8 sm:tw-max-w-full sm:tw-px-0">
+                        <div data-aos="fade-up" class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-[25px]">
+                            <div class="landing-para tw-text-center tw-text-sm tw-font-bold tw-text-gray-400">TRUSTED BY OVER <span class="tw-font-bold tw-text-gray-50">14.000,000</span> MEMBERS, INCLUDING</div>
+                        </div>
+                    </div>
+                    <div class="jsx-de29b1d7c8a6e37e tw-max-w-[1240px] tw-m-auto tw-px-3 lg:tw-px-8">
+                        <section id="features" class="tw-flex tw-flex-col tw-gap-56 tw-py-64 tw-pb-0 sm:tw-gap-28 sm:tw-py-40 sm:tw-pb-0">
+                            <div data-aos="fade-up" data-aos-offset="150" data-aos-duration="600" class="tw-flex tw-flex-row-reverse tw-items-center lg:tw-flex-col-reverse lg:tw-gap-12 tw-justify-between">
+                                <div class="tw-flex tw-max-w-[435px] tw-flex-col tw-gap-8 lg:tw-items-center">
+                                    <div class="tw-flex tw-flex-col tw-gap-6 lg:tw-items-center">
+                                        <div class="tw-bg-[#5753EC0A tw-py-2tw-rounded-full tw-flex tw-w-fit tw-items-center tw-gap-4 tw-font-semibold lg:tw-text-center">
+                                            <div class="features-tag-icon tw-p-2"><img alt="Verify Customization" loading="lazy" width="25" height="24" decoding="async" data-nimg="1" class="tw-block" style="color:transparent" src="static/landing/features/welcome/welcome-icon.svg" /></div>
+                                            <p
+                                                class="features-tag-text tw-m-0">Verify Customization</p>
+                                        </div>
+                                        <div class="tw-flex tw-flex-col tw-gap-5 lg:tw-items-center lg:tw-text-center">
+                                            <h2 class="landing-headline-sec tw-m-0 tw-max-w-[400px] sm:tw-text-2xl">Let&#x27;s Welcome New Members with Style</h2>
+                                            <p class="landing-para tw-text-gray-400 sm:tw-text-sm">Create your own verification page, with custom font, colors, effects, mouse cursor, as well as a customizable background image!</p>
+                                        </div>
+                                    </div>
+                                    <div><a target="_blank" href="https://docs.vaultcord.com/guides/verify-page"><button class="button tw-bg-gray-850 tw-border-solid tw-border-gray-800 hover:tw-bg-gray-800 tw-transition-all tw-duration-150 tw-rounded-md tw-text-base tw-py-3 tw-px-6 sm:tw-py-4 sm:tw-text-sm">Learn more about Verify Customization</button></a></div>
+                                </div><img alt="Feature image" loading="lazy" width="563" height="326" decoding="async" data-nimg="1" class="sm:tw-w-full sm:tw-h-full" style="color:transparent" src="static/landing/welcome.svg" /></div>
+                            <div data-aos="fade-up"
+                                data-aos-offset="150" data-aos-duration="600" class="tw-flex  tw-items-center lg:tw-flex-col-reverse lg:tw-gap-12 tw-justify-between">
+                                <div class="tw-flex tw-max-w-[435px] tw-flex-col tw-gap-8 lg:tw-items-center">
+                                    <div class="tw-flex tw-flex-col tw-gap-6 lg:tw-items-center">
+                                        <div class="tw-bg-[#5753EC0A tw-py-2tw-rounded-full tw-flex tw-w-fit tw-items-center tw-gap-4 tw-font-semibold lg:tw-text-center">
+                                            <div class="features-tag-icon tw-p-2"><img alt="Embed Messages" loading="lazy" width="25" height="24" decoding="async" data-nimg="1" class="tw-block" style="color:transparent" src="static/landing/features/embed/embed-icon.svg" /></div>
+                                            <p class="features-tag-text tw-m-0">Embed Messages</p>
+                                        </div>
+                                        <div class="tw-flex tw-flex-col tw-gap-5 lg:tw-items-center lg:tw-text-center">
+                                            <h2 class="landing-headline-sec tw-m-0 tw-max-w-[400px] sm:tw-text-2xl">Easily create embeds for your server!</h2>
+                                            <p class="landing-para tw-text-gray-400 sm:tw-text-sm">Illustrate your creativity in embeds by using VaultCord&#x27;s simple customization and sending it to any preferred channel.</p>
+                                        </div>
+                                    </div>
+                                    <div><a target="_blank" href="https://docs.vaultcord.com/guides/verify-message#slash-commands"><button class="button tw-bg-gray-850 tw-border-solid tw-border-gray-800 hover:tw-bg-gray-800 tw-transition-all tw-duration-150 tw-rounded-md tw-text-base tw-py-3 tw-px-6 sm:tw-py-4 sm:tw-text-sm">Learn more about Embed Messages</button></a></div>
+                                </div><img alt="Feature image" loading="lazy" width="563" height="326" decoding="async" data-nimg="1" class="sm:tw-w-full sm:tw-h-full" style="color:transparent" src="static/landing/embed.svg" /></div>
+                            <div data-aos="fade-up"
+                                data-aos-offset="150" data-aos-duration="600" class="tw-flex tw-flex-row-reverse tw-items-center lg:tw-flex-col-reverse lg:tw-gap-12 tw-justify-between">
+                                <div class="tw-flex tw-max-w-[435px] tw-flex-col tw-gap-8 lg:tw-items-center">
+                                    <div class="tw-flex tw-flex-col tw-gap-6 lg:tw-items-center">
+                                        <div class="tw-bg-[#5753EC0A tw-py-2tw-rounded-full tw-flex tw-w-fit tw-items-center tw-gap-4 tw-font-semibold lg:tw-text-center">
+                                            <div class="features-tag-icon tw-p-2"><img alt="Restore Members" loading="lazy" width="25" height="24" decoding="async" data-nimg="1" class="tw-block" style="color:transparent" src="static/landing/features/rr/rr-icon.svg" /></div>
+                                            <p class="features-tag-text tw-m-0">Restore Members</p>
+                                        </div>
+                                        <div class="tw-flex tw-flex-col tw-gap-5 lg:tw-items-center lg:tw-text-center">
+                                            <h2 class="landing-headline-sec tw-m-0 tw-max-w-[400px] sm:tw-text-2xl">Restore your server in seconds.</h2>
+                                            <p class="landing-para tw-text-gray-400 sm:tw-text-sm">Rebuild your community in record speed with VaultCord&#x27;s help. We save every aspect of your Discord server so you can&#x27;t forget!</p>
+                                        </div>
+                                    </div>
+                                    <div><a target="_blank" href="https://www.youtube.com/watch?v=02bX-Y8zrw8"><button class="button tw-bg-gray-850 tw-border-solid tw-border-gray-800 hover:tw-bg-gray-800 tw-transition-all tw-duration-150 tw-rounded-md tw-text-base tw-py-3 tw-px-6 sm:tw-py-4 sm:tw-text-sm">Learn more about member pulling</button></a></div>
+                                </div><img alt="Feature image" loading="lazy" width="563" height="326" decoding="async" data-nimg="1" class="sm:tw-w-full sm:tw-h-full" style="color:transparent" src="static/landing/rr.svg" /></div>
+                        </section>
+                    </div>
+                    <div class="jsx-de29b1d7c8a6e37e landing-footer ">
+                        <div class="jsx-de29b1d7c8a6e37e tw-max-w-[1240px] tw-m-auto tw-px-3 lg:tw-px-8">
+                            <div class="tw-relative tw-mt-[420px] tw-flex tw-h-full tw-flex-col tw-justify-between tw-gap-12 tw-pt-16 lg:tw-mt-[512px] sm:tw-mt-[280px]">
+                                <section class="premium_hero_bg tw-absolute tw-top-[-28%] tw-w-full tw-overflow-visible tw-rounded-lg tw-px-8 tw-py-16 lg:tw-top-[-10%] lg:tw-py-12 sm:tw-top-[-8%] sm:tw-max-w-[calc(100%-40px)] sm:tw-px-4 sm:tw-pr-2.5 sm:tw-py-8">
+                                    <div class="tw-flex tw-w-full tw-items-center tw-justify-between lg:tw-flex-col lg:tw-items-start lg:tw-gap-8">
+                                        <div class="tw-ml-8 tw-flex tw-w-fit tw-flex-col tw-gap-10 lg:tw-ml-0 lg:tw-gap-8 sm:tw-gap-4">
+                                            <div class="tw-flex tw-flex-col tw-gap-6 sm:tw-gap-2">
+                                                <h2 class="landing-headline-sec tw-m-0 tw-w-[435px] tw-text-4xl lg:tw-w-fit sm:tw-text-2xl">Let VaultCord take care of your Server</h2>
+                                                <p class="landing-para tw-m-0 tw-w-fit tw-text-xl tw-text-[#C2C1FB]">Join over <span class="tw-font-bold tw-tracking-tight tw-text-white">14.000.000</span> members on VaultCord</p>
+                                            </div><button class="button tw-bg-[#605ceb] tw-border-solid tw-border-[#6965F5] hover:tw-bg-[#807eea] tw-transition-all tw-duration-150 tw-rounded-md tw-text-base tw-py-3 tw-px-6 sm:tw-py-4 tw-w-fit tw-border-none tw-bg-[#ffffff14] sm:tw-w-full">Get started for FREE</button></div>
+                                        <div
+                                            class="tw-absolute tw-bottom-[0px] tw-right-[-200px] tw-animate-fadeIn tw-overflow-visible lg:tw-hidden"></div>
+                            </div>
+                            </section>
+                            <div class="tw-mt-48 tw-flex tw-flex-row tw-justify-between lg:tw-mt-56 lg:tw-flex-col lg:tw-gap-7">
+                                <div class="tw-flex tw-max-w-sm tw-flex-col tw-gap-6">
+                                    <div class="custom-link">VaultCord</div>
+                                    <p class="landing-para tw-text-sm tw-text-gray-400">Backup server, members, channels, messages &amp; more. Custom verify page, block alt accounts, VPNs &amp; more.</p>
+                                    <div class="tw-flex tw-h-fit tw-w-fit tw-cursor-pointer tw-gap-3 tw-rounded-md tw-border tw-border-solid tw-border-gray-820 tw-p-[8px] tw-transition-colors tw-duration-100 hover:tw-bg-gray-800"
+                                        type="button" id="radix-:Rdllm:" aria-haspopup="menu" aria-expanded="false" data-state="closed"><img alt="en flag" draggable="false" loading="lazy" width="38" height="20" decoding="async" data-nimg="1" class="tw-rounded" style="color:transparent" src="/static/flags/us.png" />
+                                        <p class="landing-para tw-text-sm tw-text-gray-300">English</p><img alt="en" loading="lazy" width="13" height="20" decoding="async" data-nimg="1" class="tw-mr-1 tw-opacity-60" style="color:transparent" src="/static/landing/arrow-down.svg" /></div>
+                                </div>
+                                <div class="tw-flex tw-flex-row tw-gap-20 lg:tw-flex-col lg:tw-gap-8">
+                                    <div class="tw-flex tw-flex-col tw-gap-6">
+                                        <div class="landing-para">Website Pages</div>
+                                        <div class="tw-flex tw-flex-col tw-gap-4"><a class="landing-para tw-flex tw-w-fit tw-items-center tw-gap-2 tw-text-sm tw-text-gray-400 tw-transition-all tw-duration-150 hover:tw-text-gray-200" href="https://dash.vaultcord.com">Dashboard</a><a class="landing-para tw-flex tw-w-fit tw-items-center tw-gap-2 tw-text-sm tw-text-gray-400 tw-transition-all tw-duration-150 hover:tw-text-gray-200"
+                                                href="https://docs.vaultcord.com">Docs</a><a class="landing-para tw-flex tw-w-fit tw-items-center tw-gap-2 tw-text-sm tw-text-gray-400 tw-transition-all tw-duration-150 hover:tw-text-gray-200" href="/pricing">Premium<p class="tw-m-0 tw-rounded tw-bg-[#ef67670f] tw-px-2 tw-py-[2px] tw-text-[12px] tw-font-extrabold tw-uppercase tw-text-[#EF6767]">NEW</p></a>
+                                            <a
+                                                class="landing-para tw-flex tw-w-fit tw-items-center tw-gap-2 tw-text-sm tw-text-gray-400 tw-transition-all tw-duration-150 hover:tw-text-gray-200" href="/commands">Commands</a>
+                                        </div>
+                                    </div>
+                                    <div class="tw-flex tw-flex-col tw-gap-6">
+                                        <div class="landing-para">Other Links</div>
+                                        <div class="tw-flex tw-flex-col tw-gap-4"><a class="landing-para tw-flex tw-w-fit tw-items-center tw-gap-2 tw-text-sm tw-text-gray-400 tw-transition-all tw-duration-150 hover:tw-text-gray-200" href="https://twitter.com/VaultCord">Twitter</a><a class="landing-para tw-flex tw-w-fit tw-items-center tw-gap-2 tw-text-sm tw-text-gray-400 tw-transition-all tw-duration-150 hover:tw-text-gray-200"
+                                                href="https://dash.vaultcord.com/discord-support">Discord</a><a class="landing-para tw-flex tw-w-fit tw-items-center tw-gap-2 tw-text-sm tw-text-gray-400 tw-transition-all tw-duration-150 hover:tw-text-gray-200"
+                                                href="https://youtube.com/@VaultCord">YouTube</a><a class="landing-para tw-flex tw-w-fit tw-items-center tw-gap-2 tw-text-sm tw-text-gray-400 tw-transition-all tw-duration-150 hover:tw-text-gray-200" href="https://www.elitepvpers.com/forum/members/8662727-vaultcord.html">Elitepvpers</a></div>
+                                    </div>
+                                    <div class="tw-flex tw-flex-col tw-gap-6">
+                                        <div class="landing-para">Rules</div>
+                                        <div class="tw-flex tw-flex-col tw-gap-4"><a class="landing-para tw-flex tw-w-fit tw-items-center tw-gap-2 tw-text-sm tw-text-gray-400 tw-transition-all tw-duration-150 hover:tw-text-gray-200" href="/terms-of-use">Terms Of Use</a><a class="landing-para tw-flex tw-w-fit tw-items-center tw-gap-2 tw-text-sm tw-text-gray-400 tw-transition-all tw-duration-150 hover:tw-text-gray-200"
+                                                href="/privacy-policy">Privacy Policy</a><a class="landing-para tw-flex tw-w-fit tw-items-center tw-gap-2 tw-text-sm tw-text-gray-400 tw-transition-all tw-duration-150 hover:tw-text-gray-200" href="/refund-policy">Refund Policy</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tw-mt-14 tw-flex tw-flex-row tw-justify-between tw-border-b-0 tw-border-l-0 tw-border-r-0 tw-border-t-2 tw-border-solid tw-border-t-gray-850 tw-py-8 sm:tw-flex-col sm:tw-items-center sm:tw-gap-5">
+                                <p class="landing-para tw-m-0 tw-text-sm tw-text-gray-400">© 2024 All rights reserved.</p>
+                                <div class="tw-flex tw-flex-row tw-items-center tw-gap-4"><a class="tw-rounded-sm tw-transition-all tw-duration-200 hover:tw-bg-gray-850" href="https://dash.vaultcord.com/discord-support"><img alt="discord" loading="lazy" width="28" height="20" decoding="async" data-nimg="1" class="tw-block" style="color:transparent" src="/static/landing/discord.svg"/></a>
+                                    <a
+                                        class="tw-rounded-sm tw-transition-all tw-duration-200 hover:tw-bg-gray-850" href="https://www.reddit.com/r/VaultCord"><img alt="reddit" loading="lazy" width="28" height="20" decoding="async" data-nimg="1" class="tw-block" style="color:transparent" src="/static/landing/reddit.svg" /></a><a class="tw-rounded-sm tw-transition-all tw-duration-200 hover:tw-bg-gray-850"
+                                            href="https://twitter.com/VaultCord"><img alt="twitter" loading="lazy" width="28" height="20" decoding="async" data-nimg="1" class="tw-block" style="color:transparent" src="/static/landing/twitter.svg"/></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jsx-de29b1d7c8a6e37e tw-pointer-events-none tw-absolute tw-top-0 tw-w-[100vw] tw-overflow-clip"><img alt="bg-min" fetchPriority="high" width="1131" height="739" decoding="async" data-nimg="1" style="color:transparent" src="/static/landing/landing-bg-min.png" /></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script id="__NEXT_DATA__" type="application/json" crossorigin="">
+        {
+            "props": {
+                "pageProps": {}
+            },
+            "page": "/",
+            "query": {},
+            "buildId": "N6wz5kZJXxs3fuBWaPPD6",
+            "nextExport": true,
+            "autoExport": true,
+            "isFallback": false,
+            "locale": "en",
+            "locales": ["en", "default", "de", "fr", "ar", "bg", "ku-IQ", "cs", "da", "el", "es", "fa", "fi", "hi", "he", "hr", "hu", "it", "ja", "ko", "lt", "nl", "no", "pl", "pt-BR", "pt", "ro", "ru", "sk", "sr", "sv", "th", "tr", "uk", "vi", "zh", "zh-TW", "tl"],
+            "defaultLocale": "en",
+            "scriptLoader": []
+        }
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8eb5ed8e1f2518fa","version":"2024.10.5","r":1,"token":"53941c25c7564b37a2d85e05d6ae2a68","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
